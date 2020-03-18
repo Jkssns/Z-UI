@@ -13,7 +13,7 @@ module.exports = {
     library: 'zjButton',
     libraryTarget: 'umd', // 指定输出格式
     umdNamedDefine: true // 会对UMD的构建过程中的AMD模块进行命名
-  },
+  }, 
   module: {
     rules: [
       {
