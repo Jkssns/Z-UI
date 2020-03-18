@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <zj-button >我没有默认值</zj-button>
-    <zj-button disabled type="primary"></zj-button>
-    <zj-button round type="success"></zj-button>
-    <zj-button type="warn" size="medium"></zj-button>
-    <zj-button type="danger" size="small"></zj-button>
+    <z-button >我没有默认值</z-button>
+    <z-button disabled type="primary"></z-button>
+    <z-button round type="success"></z-button>
+    <z-button type="warn" size="medium"></z-button>
+    <z-button type="danger" size="small"></z-button>
     <router-view />
   </div>
 </template>

@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'zj-button',
+  name: 'ZButton',
   props:{
     type:{
       type: String,

@@ -1,8 +1,8 @@
-import zjButton from "./components/button/index"
+import ZButton from "./components/button/index"
 
 
-zjButton.install = function(Vue){
-    Vue.component(zjButton.name,zjButton)
+ZButton.install = function(Vue){
+    Vue.component(ZButton.name,ZButton)
 }
 
-export default zjButton
+export default ZButton
