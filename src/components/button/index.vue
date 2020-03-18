@@ -29,18 +29,18 @@ export default {
       type: String,
       required: false,
     },
+    class: String,
     autofocus: Boolean,
     disabled: Boolean,
-    round: Boolean
+    round: Boolean,
   },
   /* data(){
     return{
-      description: 'button组件页面'
+      description: 'button组件页面',
     }
   }, */
   methods:{
     handleClick(event){
-      console.log(event)
       this.$emit('click',event)
     }
   }
