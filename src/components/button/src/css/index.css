@@ -1,5 +1,5 @@
 @charset "UTF-8";
-button {
+.z-button {
   position: relative;
   padding: 10px 15px;
   font-size: 14px;
@@ -70,6 +70,6 @@ button {
 }
 
 /* 点击效果 */
-button:active {
+.z-button:active {
   opacity: 0.8;
 }

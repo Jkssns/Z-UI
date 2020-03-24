@@ -1,18 +1,18 @@
 <template>
-  <div>
-    <input type="text">
-  </div>
+  <option value="">
+    
+  </option>
 </template>
 
 
 <script>
 export default {
   name:'',
-  /* data(){
+  data(){
     return{
-      description: 'input组件页面',
+      description: 'select下的option页面',
     }
-  }, */
+  },
   created(){
 
   },
