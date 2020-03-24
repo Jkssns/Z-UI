@@ -4,6 +4,7 @@
     :disabled="disabled"
     @click="handleClick" 
     :class="[
+      'z-button',
       type===''?'z-default':'z-'+type,
       size===''?'':'z-'+size,
       {
@@ -29,7 +30,6 @@ export default {
       type: String,
       required: false,
     },
-    class: String,
     autofocus: Boolean,
     disabled: Boolean,
     round: Boolean,

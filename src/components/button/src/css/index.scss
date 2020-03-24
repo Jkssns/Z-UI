@@ -1,4 +1,4 @@
-button {
+.z-button {
   position: relative;
   padding: 10px 15px;
   font-size: 14px;
@@ -57,6 +57,6 @@ button {
   background: #f56c6c;
 }
 /* 点击效果 */
-button:active {
+.z-button:active {
   opacity: 0.8;
 }

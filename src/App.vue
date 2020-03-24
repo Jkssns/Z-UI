@@ -1,24 +1,32 @@
 <template>
   <div id="app">
-    <header>
-      <p>button区</p>
-      <z-button>我没有默认值</z-button>
-      <z-button disabled type="primary"></z-button>
-      <z-button round type="success"></z-button>
-      <z-button type="warn" size="medium"></z-button>
-      <z-button type="danger" size="small"></z-button>
-      <p>input区</p>
-      <p>select区</p>
-    </header>
+    <ul>
+      <p>试验区</p>
+      <router-link tag="li" :to="item.path" v-for="(item,index) in pathList" :key="index">
+        <z-button type="primary">点击去{{item.name}}区</z-button>
+      </router-link>
+    </ul> 
     <router-view />
+    <div>
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'app',
-  methods:{
-  }
+  data(){
+    return{
+       pathList:[
+       { name: 'button', path: '/button'},
+       { name: 'input', path: '/input'},
+       { name: 'select', path: '/select'},
+       { name: 'dialog', path: '/dialog'},
+       { name: '集中展示', path: '/home'},
+      ]
+    }
+  },
 }
 </script>
 
@@ -30,11 +38,11 @@ h1,h2,h3,h4,h5,h6{
 }
 </style>
 <style lang="scss" scoped>
-header{
-  width: 50%;
-  padding-left: 20px;
-  p{
-    margin: 20px;
+ul{
+  margin-bottom: 50px;
+  border: 1px solid red;
+  li{
+    margin-bottom: 20px;
   }
 }
 </style>
