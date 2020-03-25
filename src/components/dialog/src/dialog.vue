@@ -71,7 +71,7 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 /* 背景区 */
 .z-dialog-wrapper {
   position: fixed;
